@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.15.3-web/css/all.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="./js/app.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  
+    <!-- MECHUS NAV BAR -->
+    <nav class="navbar navbar-light bg-dark" id="mechusNav">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="./img/MECHUS LOGO.png" alt="" class="mechusLogo"></a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary text-light" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </nav>
+
+  <!-- SHOWCASE DESKTOP-->
+
+  <section class="bg-dark text-light px-4 text-center text-sm-start p-lg-0 board">
+    <div class="container showcase ">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Get more customers with <span class="text-warning">Mechus</span></h1>
+          <p class="lead my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, laboriosam harum dignissimos quisquam nobis optio, sapiente, magnam repellendus quas commodi sed.
+             Quo culpa totam reprehenderit provident ea animi vitae neque!
+          </p>
+          <button
+           class="btn-primary btn-lg"
+           data-bs-toggle = "modal"
+           data-bs-target = "#paste"
+          > Enroll Now
+          </button>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="./img/IMG_0546-removebg.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL FOR MOBILE -->
+
+  <section class="bg-dark text-light text-center text-sm-start mechusCarousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner mt-6">
+        <div class="carousel-item active">
+          <img src="./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
+
+  <!-- NEWSLETTER -->
+
+  <section class="bg-primary text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0" id="enroll">Sign Up For A Newsletter</h3>
+      </div>
+    
+      <div class="input-group mt-4">
+        <input type="email" class="form-control" placeholder="email address">
+        <button class="btn bg-dark text-light" type="button" id="button-addon2"><i class="far fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row text-center g-4">
+
+        <!-- LAPTOPS -->
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h1 class="h1 mb-2"><i class="fa fa-laptop"></i></h1>
+            </div>
+            <h3 class="card-title mb-3">
+              Laptop
+            </h3>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nam assumenda, facere exercitationem cum impedit quidem accusamus dolor voluptatibus commodi, animi, illum quia in iusto.
+            </p>
+            <a href="#" class="btn btn-primary text-light">Check Engineers</a>
+          </div>
+        </div>
+
+        <!-- PHONES -->
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h1 class="h1 mb-2"><i class="fa fa-phone"></i></h1>
+            </div>
+            <h3 class="card-title mb-3">
+              Phone
+            </h3>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nam assumenda, facere exercitationem cum impedit quidem accusamus dolor voluptatibus commodi, animi, illum quia in iusto.
+            </p>
+            <a href="#" class="btn btn-primary text-light">Check Engineers</a>
+          </div>
+        </div>
+
+        <!-- WRISTWATCHES -->
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h1 class="h1 mb-2"><i class="fa fa-clock"></i></h1>
+            </div>
+            <h3 class="card-title mb-3">
+              Wristwatch
+            </h3>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nam assumenda, facere exercitationem cum impedit quidem accusamus dolor voluptatibus commodi, animi, illum quia in iusto.
+            </p>
+            <a href="#" class="btn btn-primary text-light">Check Engineers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOGS SECTIONS -->
+
+  <section id="learn" class="p-5">
+    <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="./img/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="" srcset=""class="img-fluid">
+        </div>
+        <div class="col-md p-5">
+          <p class="lead">
+            <h1 class="display-6">Our Blogs</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing eli
+            t. Tempora numquam perspiciatis aut quasi quibusdam fuga nobis architecto similique, nemo voluptate quos. Iure nisi sunt quos nesciunt velit, ducimus ut odit?
+            Quas deserunt odio maxime doloribus natus illum at.
+          </p>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing eli
+            t. Tempora numquam perspiciatis aut quasi quibusdam fuga nobis architecto similique, nemo voluptate quos. Iure nisi sunt quos nesciunt velit, ducimus ut odit?
+            Quas deserunt odio maxime doloribus natus illum at.
+          </p>
+
+          <a href="#" class="btn-outline-dark mt-3">
+           <strong>Read More</strong>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INVEST SECTION -->
+  <section id="learn" class="p-5">
+    <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-3 bg-dark text-light">
+          <p class="lead">
+            <div class="display-6">Why You Should Invest in Us Today</div>
+            <p class="mt-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing eli
+            t. Tempora numquam perspiciatis aut quasi quibusdam fuga nobis architecto similique, nemo voluptate quos. Iure nisi sunt quos nesciunt velit, ducimus ut odit?
+            Quas deserunt odio maxime doloribus natus illum at.
+          </p>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing eli
+            t. Tempora numquam perspiciatis aut quasi quibusdam fuga nobis architecto similique, nemo voluptate quos. Iure nisi sunt quos nesciunt velit, ducimus ut odit?
+            Quas deserunt odio maxime doloribus natus illum at.
+          </p>
+
+          <a href="#" class="btn btn-light bg-light mt-3">
+            <strong>Invest</strong>
+          </a>
+        </div>
+
+        <div class="col-md  m-3 ml-sm-0 ml-3">
+          <img src="./img/aramudi-SELXIJwN24s-unsplash.jpg" alt="" srcset=""class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- QUESTIONS -->
+
+  <section id="questions" class="p-5">
+
+    <div class="container">
+      <h2 class="text-center mb-4">Frequently-Asked Questions</h2>
+
+      <!-- ACCORDION FROM BOOTSTRAP -->
+      <div class="accordion accordion-flush" id="questions">
+
+        <!-- QUESTION 1 -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Question 1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+
+        <!-- QUESTION 2 -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Question 2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+
+        <!-- QUESTION 3 -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Question 3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </section>
+
+    <!-- TEAMS -->
+
+    <section id="instructor" class="p-5 bg-primary">
+      <div class="conatiner">
+        <h2 class="text-center text-white display-4">Meet The Team</h2>
+
+        <p class="lead text-center text-light mb-5">
+          We work 24/7 to make sure we get you the best costumers.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                   <img src="./img/ceo.JPG" alt="CEO of Mechus" class="img-thumbnail">
+                  <div class="card-title h2">Engr. Marcus Okunola - CEO</div>
+                  <div class="card-text"> <h5>Mr. Marcus works in the University of Lagos as an engineer. He graduated from the Yaba College of Technology, Lagos and now runs Mechus. </h5></div>
+                  <a href="#">
+                    <i class="fab fa-instagram text-dark display-6"></i>
+                    <i class="fab fa-twitter text-dark display-6"></i>
+                    <i class="fab fa-facebook text-dark display-6"></i>
+                    <i class="fab fa-whatsapp text-dark display-6"></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                 <img src="./img/developer-designer-hunter.JPG" alt="" class="img-thumbnail">
+                <div class="card-title h2">Okunola Femi Hunter</div>
+                <div class="card-text"> <h5>Mr. Marcus works in the University of Lagos as an engineer. He graduated from the Yaba College of Technology, Lagos and now runs Mechus. </h5></div>
+                <a href="#">
+                  <i class="fab fa-instagram text-dark display-6"></i>
+                  <i class="fab fa-twitter text-dark display-6"></i>
+                  <i class="fab fa-facebook text-dark display-6"></i>
+                  <i class="fab fa-whatsapp text-dark display-6"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="./img/mechus-engineer.JPG" alt="" class="img-thumbnail">
+              <div class="card-title h2">Engr. Yusuf Jakande</div>
+              <div class="card-text"> <h5>Mr. Marcus works in the University of Lagos as an engineer. He graduated from the Yaba College of Technology, Lagos and now runs Mechus. </h5></div>
+              <a href="#">
+                <i class="fab fa-instagram text-dark display-6"></i>
+                <i class="fab fa-twitter text-dark display-6"></i>
+                <i class="fab fa-facebook text-dark display-6"></i>
+                <i class="fab fa-whatsapp text-dark display-6"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <img src="./img/developer-designer-hunter.JPG" alt="" class="img-thumbnail">
+            <div class="card-title h2">Engr. Marcus Okunola - CEO</div>
+            <div class="card-text"> <h5>Mr. Marcus works in the University of Lagos as an engineer. He graduated from the Yaba College of Technology, Lagos and now runs Mechus. </h5></div>
+            <a href="#">
+              <i class="fab fa-instagram text-dark display-6"></i>
+              <i class="fab fa-twitter text-dark display-6"></i>
+              <i class="fab fa-facebook text-dark display-6"></i>
+              <i class="fab fa-whatsapp text-dark display-6"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="p-5">
+      <div class="conatiner">
+        <div class="row g-4">
+
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> University of Lagos
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone</span> University of Lagos
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> University of Lagos
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone</span> University of Lagos
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> University of Lagos
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 Mechus Corpoartion</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="far fa-arrow-alt-circle-up h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="paste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Fill Out This Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="first-name" class="col-form-label">
+            First Name:
+          </label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+
+        <div class="mb-3">
+          <label for="first-name" class="col-form-label">
+            Last Name:
+          </label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+
+        <div class="mb-3">
+          <label for="first-name" class="col-form-label">
+            Company Name:
+          </label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+
+        <div class="mb-3">
+          <label for="first-name" class="col-form-label">
+            Contact:
+          </label>
+          <input type="text" class="form-control" id="first-name">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="far fa-times-circle"></i></button>
+        <button type="button" class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZmVtcm9uYWwiLCJhIjoiY2tweXM1dWE0MGV2MjJxdDFxcDV2anI4ciJ9.fmfc-50tpJ8lp6r4ZIPYhw';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-71.060982, 42.35725],
+      zoom: 18
+      });
+      </script>
+  </body>
+</html>

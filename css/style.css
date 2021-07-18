@@ -1,0 +1,36 @@
+.showCase{
+    margin-top: -5rem;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.mechusLogo {
+    width: 7rem;
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .board {
+      display: none;
+    }
+
+    .carouselInner {
+        z-index: 500;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .mechusCarousel {
+      display: none;
+    }
+}
+
