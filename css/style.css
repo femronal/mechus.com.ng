@@ -11,6 +11,14 @@
     width: 7rem;
     margin-left: 1rem;
 }
+.enroll-btn {
+    background-color: rgb(2, 15, 126);
+    position: absolute;
+    right: 36.5%;
+    color: white;
+    border-style: none;
+    font-weight: 500;
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -22,15 +30,17 @@
         z-index: 500;
     }
 
-    .navbar {
-        display: none;
-    }
+    
 
 }
 
 @media screen and (min-width: 768px) {
     .mechusCarousel {
       display: none;
+    }
+
+    .enroll-btn {
+        display: none;
     }
 }
 
