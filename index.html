@@ -402,35 +402,46 @@
         <h5 class="modal-title" id="exampleModalLabel">Fill Out This Form</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+
+      <!--* THE CONTACT FORM -->
+      <form name="contact" method="POST" data-netlify="true"class="modal-body" >
         <div class="mb-3">
           <label for="first-name" class="col-form-label">
             First Name:
           </label>
-          <input type="text" class="form-control" id="first-name">
+          <input type="text" name="firstName" class="form-control" id="first-name">
         </div>
 
         <div class="mb-3">
-          <label for="first-name" class="col-form-label">
+          <label for="last-name" class="col-form-label">
             Last Name:
           </label>
-          <input type="text" class="form-control" id="first-name">
+          <input type="text" name="lastName" class="form-control" id="last-name">
         </div>
 
         <div class="mb-3">
-          <label for="first-name" class="col-form-label">
+          <label for="company-name" class="col-form-label">
             Company Name:
           </label>
-          <input type="text" class="form-control" id="first-name">
+          <input type="text" name="companyName" class="form-control" id="first-name">
         </div>
 
         <div class="mb-3">
           <label for="first-name" class="col-form-label">
             Whatsapp Number:
           </label>
-          <input type="text" class="form-control" id="first-name">
+          <input type="number" name="whatsappNumber" class="form-control" id="first-name">
         </div>
-      </div>
+      
+
+        <div class="mb-3">
+          <label for="photoPic" class="col-form-label">
+            Photo:
+          </label>
+          <input type="file" name="photo" class="form-control" id="photoPic">
+        </div>
+      </form>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="far fa-times-circle"></i></button>
         <button type="button" class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
