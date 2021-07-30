@@ -1,6 +1,7 @@
 .showCase{
     margin-top: -5rem;
 }
+
 #map {
     width: 100%;
     height: 100%;
@@ -10,17 +11,25 @@
 .mechusLogo {
     width: 7rem;
     margin-left: 1rem;
+    transition: all ease-in;
 }
+
+.mechusLogo:hover {
+
+    transform: rotate(360deg);
+}
+
 .enroll-btn {
-    background-color: rgb(2, 15, 126);
+    background-color: rgb(12, 126, 2);
     position: absolute;
-    right: 36.5%;
+    right: 30%;
     color: white;
     border-style: none;
     font-weight: 500;
+    margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     /* For mobile phones: */
     .board {
       display: none;
@@ -30,11 +39,18 @@
         z-index: 500;
     }
 
-    
+    .mechusLogo {
+        width: 4rem;
+        margin-left: 1rem;
+    }
 
+    .mechusSearchBar{
+        width: 10rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    /* For tablets and desktops */
     .mechusCarousel {
       display: none;
     }
