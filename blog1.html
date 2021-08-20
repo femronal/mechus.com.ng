@@ -6,10 +6,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="shortcut icon" href="./img/MECHUS LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/MECHUS LOGO.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/fontawesome-free-5.15.3-web/css/all.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <script src="./js/app.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -17,7 +22,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>mechus.com.ng</title>
+    <title>Mechus | Blog</title>
   </head>
   <body>
   
@@ -32,103 +37,41 @@
         </div>
       </nav>
       
-     <img src="./img/whoareweMechus.jpg" alt="Who are we - Mechus repair?" class="image-fluid" width="70%" height="auto" style="margin-left: 8rem;">
+     <img src="./img/whoareweMechus.jpg" id="Who-is-Mechus-blog" alt="Who are we - Mechus repair?" class="image-fluid">
 
-     <article style="padding: 5rem;">
-      Hi! My name is Okunola Marcus, CEO of Mechus. There are two master problems Mechus wants to solve:
+     <article class="p-lg-5 p-sm-5">
+          <h1 class="display-2">WHO WE ARE - MECHUS.</h1> <br>
 
-      Problem 1: The problem of a tech owner.
-      Problem 2: The problem of a tech engineer. <br><br><br>
+          Hi! My name is Okeke Nkechi, founder of Mechus. There are two master problems Mechus wants to solve:
 
-      Acquiring a tech is easy. Managing a tech is somewhere in the middle. Repairing a tech is difficult.  
-      Do you have a pile of laptops, phones, and other gadgets that has been lying dormant in your home ?
-      Have you ever gone through sweat and blood to fix your car, phone, or any other gadgets?
-      Do you have a spoilt car that has been lying in your garage for years?
-      Ever got stuck on the highway for 2 hours before you get a mechanic?
-      What about those other gadgets that litter your home, feeling they are impossible to repair due to their sophistication? <br><br><br>
+          Problem 1: The problem of a tech owner.
+          Problem 2: The problem of a tech engineer. <br><br><br>
 
-      We want to repair your tech. We want to alleviate the stress you face in repairing them. Don’t stress any more. Sit in your couch, grab a soft drink, pick up your phone, and order for a Mechus engineer that will attend to you in minutes.( It is that simple.) We try our best to go diverse; meaning we fix virtually any tech (apart from aeroplanes obviously).    
-      Visit our website or download our application to get started.
-      
-      If you are an engineer, you can sign up 
-      <button
-           class="btn-primary btn-lg"
-           data-bs-toggle = "modal"
-           data-bs-target = "#paste"
-          > HERE
-          </button>
+          Acquiring a gadget is easy. Managing the gadget is somewhere in the middle. Repairing the  is difficult.  
+          Do you have a pile of laptops 💻, phones 📱, and wristwatches ⌚ that has been lying dormant in your home ?
+          Have you ever gone through sweat and blood to fix your laptop, phone, or wristwatch?
+          Do you have a spoilt car that has been lying in your garage for years?
+          Ever got stuck on the highway for 2 hours before you get a mechanic?
+          What about those other gadgets that litter your home, feeling they are impossible to repair due to their sophistication? <br><br><br>
 
-     <!-- FOOTER -->
+          We want to repair your tech. We want to alleviate the stress you face in repairing them. Don’t stress any more. Sit in your couch, grab a soft drink, pick up your phone, and order for a Mechus engineer that will attend to you in minutes.( It is that simple.) We try our best to go diverse; meaning we fix virtually any tech (apart from aeroplanes obviously) 🤣. <br>   
+          Visit our website or download our application to get started.
+          
+          If you are an engineer, you can sign up <a href="./index.html">here</a>
 
-    <footer class="p-5 bg-dark text-white text-center position-relative">
-      <div class="container">
-        <p class="lead">Copyright &copy; 2021 Mechus Corpoartion</p>
-        <a href="#" class="position-absolute bottom-0 end-0 p-5">
-          <i class="far fa-arrow-alt-circle-up h1"></i>
-        </a>
-      </div>
-    </footer>
+      </article>
 
-     <!-- Modal -->
-<div class="modal fade" id="paste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <!-- FOOTER -->
 
-    <!--* THE CONTACT FORM -->
-    <form name="contact" method="POST" data-netlify="true" class="modal-content">
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2021 Mechus Corpoartion</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="far fa-arrow-alt-circle-up h1"></i>
+      </a>
+    </div>
+  </footer>
 
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Fill Out This Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      
-      <div class="modal-body" >
-        <div class="mb-3">
-          <label for="first-name" class="col-form-label">
-            First Name:
-          </label>
-          <input type="text" name="firstName" class="form-control" id="first-name">
-        </div>
-
-        <div class="mb-3">
-          <label for="last-name" class="col-form-label">
-            Last Name:
-          </label>
-          <input type="text" name="lastName" class="form-control" id="last-name">
-        </div>
-
-        <div class="mb-3">
-          <label for="company-name" class="col-form-label">
-            Company Name:
-          </label>
-          <input type="text" name="companyName" class="form-control" id="company-name">
-        </div>
-
-        <div class="mb-3">
-          <label for="first-name" class="col-form-label">
-            Whatsapp Number:
-          </label>
-          <input type="number" name="whatsappNumber" class="form-control" id="whatsappNumber">
-        </div>
-      
-
-        <div class="mb-3">
-          <label for="photoPic" class="col-form-label">
-            Photo:
-          </label>
-          <input type="file" name="photo" class="form-control" id="photoPic">
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="far fa-times-circle"></i></button>
-        <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
-      </div>
-
-    </form>
-  </div>
-</div>
-
-
+     
   </body>
 </html>
